@@ -18,28 +18,35 @@
         <title>Parkway Route Calculator</title>
 
         <!-- shorcut icon -->
-        <link rel="shortcut icon" type="image/png" href="pics/shoes.png">
+        <link rel="shortcut icon" type="image/png" href="images/GSPkwy_Shield.svg">
     </head>
 
     <body>
-        <div class="input-field">
-            <input type="text" id="number">
-            <label for="number">number</label>
+        <div class='container'>
+            <div id='input'>
+                <div class="input-field">
+                    <i class="material-icons prefix">location_on</i>
+                    <input type="text" id="number">
+                    <label for="number">Mile Marker</label>
+                </div>
+        
+                <div class="input-field">
+                    <i class="material-icons prefix">swap_vert</i>
+                    <input type="text" id="nOrS">
+                    <!-- North or South -->
+                    <label for="nOrS">North or South</label>
+                </div>
+        
+                <div class="input-field">
+                    <i class="material-icons prefix">time_to_leave</i>
+                    <input type="text" id="lOrE">
+                    <!-- local or express -->
+                    <label for="lOrE">Local or Express</label>
+                </div>
+        
+                <a class="waves-effect waves-light btn" id="button" onclick="setupDirections()"><i class="material-icons prefix" id="padding">directions</i>Get Directions</a>
+            </div>
         </div>
-
-        <div class="input-field">
-            <input type="text" id="nOrS">
-            <!-- North or South -->
-            <label for="nOrS">N or S</label>
-        </div>
-
-        <div class="input-field">
-            <input type="text" id="lOrE">
-            <!-- local or express -->
-            <label for="lOrE">L or E</label>
-        </div>
-
-        <a class="waves-effect waves-light btn" onclick="setupDirections()">Enter</a>
 
         <!-- Directions -->
         <div class="container" style="margin-top: 40px;">

@@ -1,5 +1,24 @@
 html {
+    background-color: rgb(217, 252, 217);
+}
+
+#input {
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+
+#padding {
+    padding-right: 5%;
+}
+
+#button {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
