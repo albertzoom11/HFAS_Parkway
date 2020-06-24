@@ -39,7 +39,13 @@
             <label for="lOrE">L or E</label>
         </div>
 
-        <a class="waves-effect waves-light btn" onclick="calculateRoute()">Enter</a>
+        <a class="waves-effect waves-light btn" onclick="setupDirections()">Enter</a>
+
+        <!-- Directions -->
+        <div class="container" style="margin-top: 40px;">
+            <ul class="collapsible popout z-depth-0 directions" id="heatmapJournal" style="border: none;">
+            </ul>
+        </div>
 
         <!-- import jquery -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
