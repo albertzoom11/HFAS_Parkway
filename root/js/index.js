@@ -91,7 +91,7 @@ var calculateRoute = (number, northOrSouth, localOrExpress) => {
 
 var getTableArrayFromNum = (num, number) => {
     var output = [];
-    
+
     if (num == 100) {
         output = [
             'Make sure you inputted a number between 113.4 and 119.1 for the first input field.'
@@ -246,7 +246,7 @@ var getTableArrayFromNum = (num, number) => {
 
 var getPictureArrayFromNum = (num) => {
     var output = [];
-    
+
     if (num == 100) {
         output = [
             'numberInput.jpg'
@@ -413,7 +413,7 @@ function setupDirections() {
 
     var html = '';
 
-    for (let i = 0; i < table.length; i++) { 
+    for (let i = 0; i < table.length; i++) {
         var li = `
         <li>
             <div class="collapsible-header waves-effect waves-light teal accent-3"><h6 style="margin: 0 auto;">${table[i]}</h6></div>
@@ -438,12 +438,36 @@ document.addEventListener('DOMContentLoaded', function () {
 var input = document.getElementById("lOrE");
 
 // Execute a function when the user releases a key on the keyboard
-input.addEventListener("keyup", function(event) {
-  // Number 13 is the "Enter" key on the keyboard
-  if (event.keyCode === 13) {
-    // Cancel the default action, if needed
-    event.preventDefault();
-    // Trigger the button element with a click
-    document.getElementById("button").click();
-  }
+input.addEventListener("keyup", function (event) {
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        document.getElementById("button").click();
+    }
+});
+
+var input2 = document.getElementById("nOrS");
+// Execute a function when the user releases a key on the keyboard
+input2.addEventListener("keyup", function (event) {
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        document.getElementById("button").click();
+    }
+});
+
+var input3 = document.getElementById("number");
+// Execute a function when the user releases a key on the keyboard
+input3.addEventListener("keyup", function (event) {
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        document.getElementById("button").click();
+    }
 });
