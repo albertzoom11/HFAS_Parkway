@@ -297,103 +297,103 @@ var getPictureArrayFromNum = (num) => {
     } else if (num == 2) {
         // back route to lloyd road entrance
         output = [
-            'Turn right onto Crawfords Corner Road',
-            'Turn right onto Holmdel Road',
-            'Turn left onto Hillcrest Road',
-            'Turn left onto Bethany Road',
-            'Turn right onto Line Road',
-            'Bear Left on Line Road to avoid cul-de-sac',
-            'Turn right onto Lloyd Road',
-            'Bear right to enter on southbound local from Lloyd Road',
-            'Continue on southbound local until you arrive at ' + number + "."
+            'crawfordsRight.jpg',
+            'holmdelRight.jpg',
+            'hillcrestLeft.jpg',
+            'bethanyLeft.jpg',
+            'lineRight.jpg',
+            'lineLeft.jpg',
+            'lloydRight.jpg',
+            'gspLloyd.jpg',
+            'arrived.jpg'
         ];
     } else if (num == 3) {
         // take pnc local southbound
         output = [
-            'Enter the Parkway through the PNC southbound local entrance.',
-            'Continue on southbound local until you arrive at ' + number + "."
+            'gspPncSL.jpg',
+            'arrived.jpg'
         ];
     } else if (num == 4) {
         // wrap around to 119.5
         output = [
-            'Enter the Parkway through the PNC northbound express cut through.',
-            'Cut through on 119.5 to southbound express.',
-            'Continue on southbound express until you arrive at ' + number + "."
+            'gspPncE.jpg',
+            '119_5.jpg',
+            'arrived.jpg'
         ];
     } else if (num == 5) {
         // take back route with line road and cut across 117.8
         output = [
-            'Turn right onto Crawfords Corner Road',
-            'Turn right onto Holmdel Road',
-            'Turn left onto Hillcrest Road',
-            'Turn left onto Bethany Road',
-            'Turn right onto Line Road',
-            'Bear Left on Line Road to avoid cul-de-sac',
-            'Turn right onto Lloyd Road',
-            'Bear right to enter on southbound local from Lloyd Road',
-            'Cut through on 117.8 to southbound express.',
-            'Continue on southbound express until you arrive at ' + number + "."
+            'crawfordsRight.jpg',
+            'holmdelRight.jpg',
+            'hillcrestLeft.jpg',
+            'bethanyLeft.jpg',
+            'lineRight.jpg',
+            'lineLeft.jpg',
+            'lloydRight.jpg',
+            'gspLloyd.jpg',
+            '117_8L.jpg',
+            'arrived.jpg'
         ];
     } else if (num == 6) {
         // wrap around to 117.5
         output = [
-            'Enter the Parkway through the PNC northbound express cut through.',
-            'Cut through on 117.5 to southbound express.',
-            'Continue on southbound express until you arrive at ' + number + "."
+            'gspPncE.jpg',
+            '117_5.jpg',
+            'arrived.jpg'
         ];
     } else if (num == 7) {
         // take pnc express southbound
         output = [
-            'Enter the Parkway through the PNC southbound express cut through.',
-            'Continue on southbound express until you arrive at ' + number + "."
+            'gspPncE.jpg',
+            'arrived.jpg'
         ];
     } else if (num == 8) {
         // take pnc express southbound
         output = [
             // take 112.3
-            'Enter the Parkway through the PNC southbound express cut through.',
-            'Cut through on 112.3 to northbound express.',
-            'Continue on northbound express until you arrive at ' + number + "."
+            'gspPncE.jpg',
+            '112_3.jpg',
+            'arrived.jpg'
         ];
     } else if (num == 9) {
         // take pnc express southbound
         output = [
             // take 113.8
-            'Enter the Parkway through the PNC southbound express cut through.',
-            'Cut through on 113.8 to northbound express.',
-            'Continue on northbound express until you arrive at ' + number + "."
+            'gspPncE.jpg',
+            '113_8.jpg',
+            'arrived.jpg'
         ];
     } else if (num == 10) {
         // take pnc express southbound
         output = [
             // take pnc express northbound
-            'Enter the Parkway through the PNC northbound express cut through.',
-            'Continue on northbound express until you arrive at ' + number + "."
+            'gspPncE.jpg',
+            'arrived.jpg'
         ];
     } else if (num == 11) {
         // take pnc express southbound
         output = [
             // take 113.0
-            'Enter the Parkway through the PNC southbound express cut through.',
-            'Cut through on 112.3 to northbound express.',
-            'Cut through on 113.0 to northbound local.',
-            'Continue on northbound local until you arrive at ' + number + "."
+            'gspPncE.jpg',
+            '112_3.jpg',
+            '113_0R.jpg',
+            'arrived.jpg'
         ];
     } else if (num == 12) {
         // take pnc express southbound
         output = [
             // take pnc arts center 114.7
-            'Enter the Parkway through the PNC southbound express cut through.',
-            'Cut through on 113.8 to northbound express.',
-            'Take the PNC crossover which starts on 114.1 and ends at 114.7 to northbound local.',
-            'Continue on northbound local until you arrive at ' + number + "."
+            'gspPncE.jpg',
+            '113_8.jpg',
+            '114_7R.jpg',
+            'arrived.jpg'
         ];
     } else {
         // take pnc express southbound
         output = [
             // take pnc arts center local northbound
-            'Enter the Parkway through the PNC northbound local entrance.',
-            'Continue on northbound local until you arrive at ' + number + "."
+            'gspPncNL.jpg',
+            'arrived.jpg'
         ];
     }
     return output;
