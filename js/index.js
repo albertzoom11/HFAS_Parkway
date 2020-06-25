@@ -418,7 +418,7 @@ function setupDirections() {
         <li>
             <div class="collapsible-header waves-effect waves-light teal accent-3"><h6 style="margin: 0 auto;">${table[i]}</h6></div>
             <div class="collapsible-body teal accent-1" style="text-align: center;">
-                <img src="images/${pictures[i]}" height="100%" width="100%" alt="Failed to show image" style="margin: 0 auto;">
+                <img src="images/${pictures[i]}" height="400" width="500" alt="Failed to show image" style="margin: 0 auto;">
             </div>
         </li>
     `;
